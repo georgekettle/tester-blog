@@ -14,6 +14,7 @@
   <tbody>
     <% @articles.each do |article| %>
       <tr>
+        <td><%= cl_image_tag('xu7j3hi5uhyexdr1b4ab', width: 400, height: 300, crop: :fill) %></td>
         <td><%= article.title %></td>
         <td><%= article.body %></td>
         <td><%= link_to 'Show', article %></td>
